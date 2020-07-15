@@ -10,11 +10,11 @@ WASM Envoy filter for injecting secrets into requests dynamically.
 4. Inject secret with Vault with https://www.vaultproject.io/docs/platform/k8s/injector
 5. Harden SYS_CALLs on Envoy attached sidecar
 
-Auth Types to try:
+Auth Methods to try:
 
-Basic Auth
-JWT
-Dynamically change secrets without client being aware
+1. Basic Auth
+2. JWT
+3. Dynamically change secrets without client being aware
 
 
 ### Initial Inspiration
