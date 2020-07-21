@@ -4,11 +4,10 @@ WASM Envoy filter for injecting secrets into requests dynamically.
 
 
 ## Steps to accomplish this:
-1. Create test API (Node or Golang) that will enforce authorization requests
+~~1. Create test API (Node or Golang) that will enforce authorization requests~~
 2. Create client container with sidecar and attach filter deployment
-3. Get POC working with cURL command from client container with secret mounted in Envoy directly.
-4. Inject secret with Vault with https://www.vaultproject.io/docs/platform/k8s/injector
-5. Harden SYS_CALLs on Envoy attached sidecar
+3. Get POC working with cURL command from client container with secret mounted in Envoy directly (hardcoded).
+4. Figure out a better spot than hardcoding them
 
 Auth Methods to try:
 
